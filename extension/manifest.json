@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "No Bing Search Redirector",
+  "version": "1.0.0",
+  "description": "Redirects Bing search result pages to Google search.",
+  "permissions": ["webNavigation"],
+  "host_permissions": [
+    "https://bing.com/search*",
+    "https://www.bing.com/search*",
+    "http://bing.com/search*",
+    "http://www.bing.com/search*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
